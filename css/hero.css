@@ -1,0 +1,242 @@
+.hero {
+    text-align: center;
+    background-color: var(--first-brand-color);
+    padding: 15rem 0 10rem;
+    border-radius: 2rem;
+}
+.hero .title {
+    line-height: 1;
+    margin-bottom: 2rem;
+}
+.hero .text {
+    margin: 0 auto 3rem;
+    max-width: 35rem;
+}
+.hero__block {
+    margin-bottom: 5rem;
+}
+.hero__img {
+    display: block;
+    width: 100%;
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+
+
+
+
+.question {
+    padding: 12rem 0;
+    text-align: center;
+    position: relative;
+}
+.question .sub-title {
+    margin-bottom: 6rem;
+}
+.question__sub-title {
+    font-family: var(--title-font);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+.question__item:not(:last-child) {
+    margin-bottom: 6rem;
+}
+.question__list {
+    max-width: 50rem;
+    margin: 0 auto;
+}
+.relative__title {
+    position: relative;
+}
+.relative__title::before {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--third-brand-color);
+    display: block;
+    /* content: 'faq'; */
+    text-transform: uppercase;
+    font-family: var(--main-title-font);
+    font-size: 6rem;
+    z-index: -1;
+}
+.question__title::before {
+    content: 'faq';
+}
+.contacts__title::before {
+    content: 'contacts';
+}
+.products__title::before {
+    content: 'products';
+}
+.policy__title::before {
+    content: 'policies';
+}
+
+
+
+
+.contacts__wrapper {
+    overflow: hidden;
+}
+.contacts {
+    padding: 15rem 0;
+    text-align: center;
+    position: relative;
+}
+.contacts .sub-title {
+    margin-bottom: 2rem;
+}
+.contacts__box {
+    max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8rem;
+}
+.contacts__item:not(:last-child) {
+    margin-bottom: 2rem;
+}
+.contacts__svg-box {
+    background-color: var(--first-brand-color);
+    border-radius: 50%;
+    border: .15rem solid var(--second-brand-color);
+    width: 5.5rem;
+    height: 5.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+}
+.contacts__svg {
+    display: block;
+    width: 2.5rem;
+    height: 2.5rem;
+    fill: var(--second-brand-color);
+}
+
+
+
+
+.policy {
+    padding: 10rem 0;
+    text-align: center;
+    position: relative;
+}
+.policy .sub-title {
+    margin-bottom: 8rem;
+}
+.policy__sub-title {
+    font-family: var(--title-font);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.policy__block {
+    max-width: 45rem;
+    margin: 0 auto;
+}
+.policy__block--top {
+    margin-bottom: 6rem;
+}
+.policy .text {
+    margin-bottom: 3rem;
+}
+
+
+
+
+
+@media screen and (min-width: 1440px)  {
+    .hero {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20rem 10rem 15rem;
+        text-align: left;
+    }
+    .hero__block {
+        margin-bottom: 0;
+        padding: 3rem 0 3rem 5rem;
+        border-left: 1rem solid rgba(70, 104, 253, .5);
+        border-radius: 1rem;
+    }
+    .hero__img {
+        margin: 0;
+    }
+    .hero .text,
+    .hero .btn {
+        margin-left: 0;
+    }
+
+
+
+
+    .relative__title::before {
+        font-size: 20rem;
+    }
+    .question .sub-title {
+        margin-bottom: 12rem;
+    }
+
+
+    .question::before,
+    .contacts::before,
+    .policy::before {
+        display: block;
+        content: '';
+        width: 40rem;
+        height: 40rem;
+        border: 5rem solid var(--first-brand-color);
+        position: absolute;
+        top: 50%;
+        left: -20rem;
+        border-radius: 50%;
+        z-index: -1;
+        transform: translate(0, -50%);
+    }
+    .question::after,
+    .contacts::after,
+    .policy::after {
+        display: block;
+        content: '';
+        width: 50rem;
+        height: 50rem;
+        border: .1rem dashed rgba(70, 104, 253, .5);
+        position: absolute;
+        top: 50%;
+        left: -25rem;
+        border-radius: 50%;
+        z-index: -1;
+        transform: translate(0, -50%);
+    }
+    .contacts::before {
+        left: auto;
+        right: -10rem;
+        width: 30rem;
+        height: 30rem;
+    }
+    .contacts::after {
+        left: auto;
+        right: -12.5rem;
+        width: 35rem;
+        height: 35rem;
+    }
+    .policy::before {
+        top: auto;
+        transform: translate(0, 0);
+        bottom: -30rem;
+        width: 60rem;
+        height: 60rem;
+        border: 10rem solid var(--first-brand-color);
+    }
+    .policy::after {
+        top: auto;
+        transform: translate(0, 0);
+        bottom: -35rem;
+        width: 70rem;
+        height: 70rem;
+    }
+}
+
