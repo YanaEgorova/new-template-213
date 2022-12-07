@@ -159,7 +159,7 @@
     .hero__block {
         margin-bottom: 0;
         padding: 3rem 0 3rem 5rem;
-        border-left: 1rem solid rgba(70, 104, 253, .5);
+        border-left: 1rem solid var(--second-brand-color);
         border-radius: 1rem;
     }
     .hero__img {
@@ -203,7 +203,7 @@
         content: '';
         width: 50rem;
         height: 50rem;
-        border: .1rem dashed rgba(70, 104, 253, .5);
+        border: .1rem dashed var(--second-brand-color);
         position: absolute;
         top: 50%;
         left: -25rem;
